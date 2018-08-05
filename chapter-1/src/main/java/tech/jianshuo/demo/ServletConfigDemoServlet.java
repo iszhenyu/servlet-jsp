@@ -14,11 +14,10 @@ import javax.servlet.annotation.WebServlet;
  * @author zhen.yu
  * Created on 2018-08-01
  */
-@WebServlet(name = "ServletConfigDemoServlet", urlPatterns = {"/c1/servletConfigDemo"},
-    initParams = {
+@WebServlet(name = "ServletConfigDemoServlet", urlPatterns = {"/c1/servletConfigDemo"}, initParams = {
         @WebInitParam(name = "admin", value = "zhen"),
-            @WebInitParam(name = "email", value = "zhen@163.com")
-    }
+        @WebInitParam(name = "email", value = "zhen@163.com")
+}
 )
 public class ServletConfigDemoServlet implements Servlet {
 
